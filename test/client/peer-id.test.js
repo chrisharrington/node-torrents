@@ -1,4 +1,4 @@
-var sut = include("client/peerId"),
+var sut = include("client/peer-id"),
 	
 	config = include("config"),
 	
@@ -20,11 +20,11 @@ describe("client", function() {
 			});
 			
 			it("should generate a string that contains the client code in the first and second positions", function() {
-				sut.generate().substr(1, 2).should.equal(config.clientCode);
+				sut.generate().substr(1, 2).should.equal(config.client.code);
 			});
 			
 			it("should generate a string that contains the client version in the third to sixth positions", function() {
-				sut.generate().substr(3, 4).should.equal(config.version);
+				sut.generate().substr(3, 4).should.equal(config.client.version);
 			});
 			
 			it("should generate a string that contains a '-' in the eighth position", function() {

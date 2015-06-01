@@ -1,4 +1,7 @@
 {
-	"clientCode": "NT",
-	"version": "0100"
+	"client": {
+		"code": "NT",
+		"version": "0100",
+		"port": 6881
+	}
 }

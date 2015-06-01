@@ -1,5 +1,6 @@
 require("./lib/globals");
 
-var peerId = require("./lib/client/peerId");
+var Start = include("tracker/params/start"),
+	start = new Start({ blah: "boo" });
 
-console.log(peerId.generate());
+start.query();
