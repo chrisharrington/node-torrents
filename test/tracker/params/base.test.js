@@ -18,11 +18,6 @@ describe("tracker", function() {
 				_shouldThrow("The info hash is invalid.");
 			});
 			
-			it("should throw error when info_hash is invalid", function() {
-				_params.info_hash = "blah";
-				_shouldThrow("The info hash is invalid.");
-			});
-			
 			it("should throw error when peer_id is missing", function() {
 				delete _params.peer_id;
 				_shouldThrow("The peer ID is invalid.");

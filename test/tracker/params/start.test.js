@@ -5,8 +5,8 @@ var Start = include("tracker/params/start");
 describe("tracker", function() {
     describe("params", function() {
         describe("start", function() {
-            it("should set event to 'start'", function() {
-                new Start(_buildParams())._params.event.should.equal("start");
+            it("should set event to 'started'", function() {
+                new Start(_buildParams())._params.event.should.equal("started");
             });
             
             function _buildParams() {

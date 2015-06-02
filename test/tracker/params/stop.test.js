@@ -5,8 +5,8 @@ var Stop = include("tracker/params/stop");
 describe("tracker", function() {
     describe("params", function() {
         describe("start", function() {
-            it("should set event to 'stop'", function() {
-                new Stop(_buildParams())._params.event.should.equal("stop");
+            it("should set event to 'stopped'", function() {
+                new Stop(_buildParams())._params.event.should.equal("stopped");
             });
             
             function _buildParams() {
